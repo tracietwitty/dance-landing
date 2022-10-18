@@ -6,13 +6,12 @@ body,html {
     font-family: 'Nunito', sans-serif; 
 }
 
-.hero-image {
-    background-image: url('/imgs/header.jpg');
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: -1;
+html {
+    background: url(/dance-landing/imgs/header.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .hero-info {
@@ -22,7 +21,7 @@ body,html {
     backdrop-filter: blur(100px);
     position: absolute;
     top: 75%;
-    left: 47%;
+    left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
     text-align: center;
@@ -30,15 +29,28 @@ body,html {
     padding-top: 20px;
 }
 
+hr {
+    margin: 20px auto;
+    color: hsl(224, 50%, 30%);
+    border: 2px solid hsl(224, 50%, 30%);
+    border-radius: 3px;
+    max-width: 465px;
+    opacity: 1;  
+}
+
 
 .btn {
+    padding: 0.5rem 2rem;
     margin-bottom: 20px;
-    background-color: hsl(224, 44%, 37%);
+    background-color: hsl(38, 100%, 61%);
+    color: rgb(230, 229, 228);
     border: transparent;
+    border-radius: 200px;
 }
 
 .btn:hover {
-    background-color: hsl(224, 50%, 30%);
+    background-color: hsl(40, 100%, 61%);
     opacity: 0.9;
     transition: 0.3s;
+    color: #eee;
 }
