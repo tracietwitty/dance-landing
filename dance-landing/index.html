@@ -25,12 +25,14 @@
     <title>Dance Camp Landing Page</title>
   </head>
   <body>
+    <!-- Home page with Buttons -->
     <div class="hero-image">
       <div class="hero-info">
         <h1>Join us for our annual December dance camp</h1>
         <hr />
-        <button class="btn btn-primary btn-lg" type="submit">Sign up</button>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        <button onClick="SignUp()" class="btn btn-primary btn-lg" type="submit">Sign up</button>
+        <button onClick="LearnMore()" class="btn btn-primary btn-lg" href="./about.html">Learn more</a>
+
       </div>
     </div>
     <!-- JavaScript Bootstrap Bundle with Popper -->
@@ -39,5 +41,16 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
+    <!-- OnClick fx to open about page -->
+    <script>        
+      function LearnMore() {
+        window.open("./about.html", "_blank");
+      }
+    </script>
+    <script>        
+      function SignUp() {
+        window.open("./signup.html", "_blank");
+      }
+    </script>
   </body>
 </html>
